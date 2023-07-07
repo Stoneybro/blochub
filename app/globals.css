@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: #fff;
+  --background-start-rgb: #fff;
+  --background-end-rgb: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: #fff;
+    --background-start-rgb: #fff;
+    --background-end-rgb: #fff;
+  }
+}
+
+body {
+  transition: all 0.2s ease-in;
+  background: #fff;
+}
+
+/*  */
+.pulse::before{
+  content: '';
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -2px;
+  left: -2px;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(243, 88, 175, 1) ;
+  animation: pulsing 2s linear infinite ;
+}
+@keyframes pulsing {
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(1.25);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  75%{
+    transform: scale(1.25);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
