@@ -29,7 +29,6 @@ export default function Home() {
       <Text />
       <Features />
       <Numbers />
-
     </div>
   )
 }

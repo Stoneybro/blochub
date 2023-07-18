@@ -30,25 +30,31 @@ body {
   top: -2px;
   left: -2px;
 
-  background-color: transparent;
+  background-color: rgba(243, 88, 175, 1);
   border-radius: 50%;
   border: 1px solid rgba(243, 88, 175, 1) ;
-  animation: pulsing 2s linear infinite ;
+  animation: pulsing 3s linear infinite ;
+  z-index: -1;
 }
 @keyframes pulsing {
   0%{
     transform: scale(1);
+    opacity: 1;
   }
   25%{
     transform: scale(1.25);
+    opacity: 0.75;
   }
   50%{
     transform: scale(1.5);
+    opacity: 0.75;
   }
   75%{
     transform: scale(1.25);
+    opacity: 0.5;
   }
   100%{
     transform: scale(1);
+    opacity: 0.25;
   }
 }

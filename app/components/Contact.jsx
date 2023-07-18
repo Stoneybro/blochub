@@ -18,13 +18,13 @@ const Contact = () => {
                     <button className="bg-[#63CD70] py-2 px-6 flex gap-2 items-center"><FaWhatsapp color='white' />Whatsapp</button>
                 </div>
                 <div className="flex-[2] flex flex-col  lg:pl-16 text-black ">
-                    <div className="w-full flex flex-col  ">
+                    <div className="w-full flex flex-col">
                     <div className="flex  flex-[1] flex-col lg:flex-row gap-4 lg:gap-6 wrap w-full mb-10">
                         <div className="w-full "><input type="text" className='w-full py-4 px-4' placeholder='Name'/></div>
                         <div className="w-full"><input type="text" className='w-full py-4 px-4' placeholder='Email Address' /></div>
                     </div>
                     <div className="flex flex-[3] w-full h-full"><textarea name="" id="" placeholder='Message' className='w-full h-44 outline-none p-4'></textarea></div>
-                    <button className="flex-[1] py-2 px-10 bg-secondary mt-10 text-white inline">Submit</button>
+                    <button className="flex-[1] py-2 px-10 bg-secondary mt-10 lg:mt-6 lg:ml-auto  text-white lg:w-36 ">Submit</button>
                     </div>
                     
                 </div>

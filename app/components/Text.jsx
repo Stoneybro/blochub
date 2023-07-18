@@ -7,7 +7,7 @@ const Text = () => {
 
   return (
     <div className='flex flex-col items-center lg:w-[800px] lg:px-0 px-4 mx-auto py-8'>
-      <div className=" hidden lg:block relative mb-6"><div className="bg-secondary rounded-full border   p-1 pulse"><RxCaretDown color='white' size={40} /></div>
+      <div className=" hidden lg:block relative mb-6"><div className="bg-secondary rounded-full  z-20   p-1 pulse"><RxCaretDown color='white' size={40} /></div>
 </div>
         <div className=" font-medium">
             <h1 className='lg:text-3xl text-2xl font-bold my-6  text-center'>WELCOME TO EVATON INTERNATIONAL SCHOOLS </h1>
