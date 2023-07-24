@@ -1,15 +1,20 @@
-
+'use client'
 
 
 import { RxCaretDown } from 'react-icons/rx'
 import Link from 'next/link'
 const Text = () => {
+  function scroll() {
+    // const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({top:685,behavior:'smooth'})
 
+
+  }
   return (
     <div className='flex flex-col items-center lg:w-[800px] lg:px-0 px-4 mx-auto py-8'>
-      <div className=" hidden lg:block relative mb-6"><div className="bg-secondary rounded-full  z-20   p-1 pulse"><RxCaretDown color='white' size={40} /></div>
+      <div className=" hidden lg:block relative mb-6" onClick={scroll}><div className="bg-secondary rounded-full  z-20   p-1 pulse"><RxCaretDown color='white' size={40} /></div>
 </div>
-        <div className=" font-medium">
+        <div className=" font-medium" id='#move'>
             <h1 className='lg:text-3xl text-2xl font-bold my-6  text-center'>WELCOME TO EVATON INTERNATIONAL SCHOOLS </h1>
             <div className="lg:w-[780px] lg:px-0 mx-auto">
             <p className=' text-justify mb-5 leading-5'> Step into a world of limitless possibilities, where education transcends boundaries and excellence thrives. At Evaton International Schools, we are dedicated to providing a holistic educational experience that nurtures the whole child.

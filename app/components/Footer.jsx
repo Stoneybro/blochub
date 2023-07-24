@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -6,6 +7,11 @@ import {BiLogoFacebook} from 'react-icons/bi'
 import {RxCaretUp} from 'react-icons/rx'
 import evaton from '../../public/evaton2.png'
 const Footer = () => {
+  function scroll() {
+    // const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({top:0,behavior:'smooth'})
+    console.log(window.scrollY);
+  }
   return (
     <>
     <div className='bg-secondary pb-16 text-white pt-12'>
@@ -46,7 +52,7 @@ const Footer = () => {
             <div className="h-8 w-8 bg-white flex justify-center items-center rounded-full"> <FaLinkedinIn color='rgba(25, 41, 106, 1)' /></div>
                
             </div>
-            <div className="bg-pink rounded-full   p-1"><RxCaretUp color='white' size={40} /></div>
+            <div className="bg-pink rounded-full   p-1" onClick={scroll}><RxCaretUp color='white' size={40} /></div>
         </div>
     </div>
     <div className="bg-black py-4 text-center px-4 flex justify-center text-xs text-[#BCBCBC] font-semibold">Designed and Developed by NEXT STUDIO © Evaton International Schools 2023. All Rights Reserved</div>

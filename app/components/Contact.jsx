@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="flex pb-16 flex-col lg:flex-row gap-12 lg:gap-0">
                 <div className=" flex-[1.4] flex flex-col gap-6 items-start">
                     <div className="flex gap-2 lg:gap-4"><Image src={building} className='w-[30px] ' /><div className="">36, Ishaga Road, Ishaga, Agbelekale, Abule-Egba, Lagos State, Nigeria.</div></div>
-                    <div className=" ml-10 lg:ml-16">5/7, Jide Akinola Close, Off Michael Ayorinder Str., Agbelekale, Abule-Egba, Lagos State, Nigeria</div>
+                    <div className=" ml-10 lg:ml-[45px]">5/7, Jide Akinola Close, Off Michael Ayorinder Str., Agbelekale, Abule-Egba, Lagos State, Nigeria</div>
                     <div className="flex gap-2 lg:gap-4"><Image src={phone} className='w-[30px] '  /><div className="">08034258774, 08034258774, 08034258774</div></div>
                     <div className="flex gap-2 lg:gap-4 items-center"><Image src={mail} className='w-[30px] '  /><div className=" break-words">Evatoninternationalschools@gmail.com</div></div>
                     <button className="bg-[#63CD70] py-2 px-6 flex gap-2 items-center"><FaWhatsapp color='white' />Whatsapp</button>

@@ -1,10 +1,34 @@
+'use-client'
+
 import React from 'react'
 import Image from 'next/image'
 import quotes from '../../public/quotes.svg'
 import { RxCaretLeft,RxCaretRight } from 'react-icons/rx'
 import face from '../../public/face.svg'
 
+
+// import { useState } from 'react'
+// import { AnimatePresence } from 'framer-motion'
+
 const Reviews = () => {
+  // const [currentIndex, setCurrentIndex] = useState(0);
+  // const images=[]
+  //   const handleNext = () => {
+  //     setCurrentIndex((prevIndex) =>
+  //       prevIndex + 1 === images.length ? 0 : prevIndex + 1
+  //     );
+  //   };
+  //   const handlePrevious = () => {
+  //     setCurrentIndex((prevIndex) =>
+  //       prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+  //     );
+  //   };
+  //   const handleDotClick = (index) => {
+  //     setCurrentIndex(index);
+  //   };
+  
+
+
   return (
     <div className='flex flex-col lg:w-[1000px] mx-auto justify-center items-center my-32 py-8 gap-6 relative'>
         <div className="absolute top-[4.7rem] md:top-[4rem] left-6 md:left-12 lg:left-24"><Image src={quotes} className='w-[70%]' /></div>
