@@ -14,13 +14,17 @@ module.exports = {
       },
       colors:{
         'primary':'#fff',
-        'secondary':' rgba(25, 41, 106, 1)',
-        'light':'rgba(25, 41, 106, 0.5)',
-        'red':'rgba(247, 82, 82, 1)',
-        'text-light':'rgba(217, 217, 217, 1)',
-        'pink':'rgba(243, 88, 175, 1)',
+        'secondary':'#5347F6',
+        'red':'#D75F46',
+        'green':'#51D655',
+      },
+      fontFamily: {
+        sans: ['var(--font-roobert)'],
+
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+  ],
 }
