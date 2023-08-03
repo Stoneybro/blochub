@@ -1,7 +1,6 @@
 import './globals.css'
 import localFont from 'next/font/local'
-import Nav from './components/Nav'
-import Hero from './components/Hero'
+
 const roobert = localFont({
   src: [
     {
