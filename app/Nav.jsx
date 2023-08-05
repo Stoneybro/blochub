@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import logo from '../../public/logo.svg'
+import logo from '../public/logo.svg'
 import {BiMenu} from 'react-icons/bi'
 const Nav = () => {
   return (
