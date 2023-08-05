@@ -1,7 +1,7 @@
 "use Client"
 
-import Nav from './components/Nav'
-import Hero from './components/Hero'
+import Nav from './Nav'
+import Hero from './Hero'
 import About from './components/About'
 import Services from './components/Services'
 import Slider from './components/Slider'
