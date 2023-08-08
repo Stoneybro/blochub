@@ -11,14 +11,27 @@ import Strips from './components/Strips'
 import Cta from './components/Cta'
 import Slider2 from './components/Slider2'
 import Footer from './components/Footer'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import LocomotiveScroll from 'locomotive-scroll'
+import './locomotive.css'
+
+
+
 export default function Home() {
-  const locomotiveScroll = new LocomotiveScroll();
-    
+  const containerref=useRef(null)
+    useEffect(()=>{
+        const scrollElement=new LocomotiveScroll({
+          el:containerref.current,
+          smooth:true,
+          smartphone:{
+            smooth:true
+          }
+          
+        })
+    },[])
   return (
     
-    <div>
+    <div className='' data-scroll-container ref={containerref}>
 
       <Nav />
      <Hero />

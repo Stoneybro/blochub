@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div className='bg-black text-white  h-[calc(100vh)] -z-10 flex items-end pb-8 sticky top-0'>
+    <div className='bg-black text-white  h-[calc(100vh)] -z-10 flex items-end pb-8 sticky top-0' >
      
         <div className="w-[1110px] mx-auto  mt-auto ">
 

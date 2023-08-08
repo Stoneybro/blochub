@@ -1,5 +1,6 @@
 import './globals.css'
 import localFont from 'next/font/local'
+import Nav from './Nav'
 
 const roobert = localFont({
   src: [
@@ -43,10 +44,11 @@ const roobert = localFont({
   ],
 })
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
       <body className={`${roobert.className}`}>
-
+    
         {children}
 
 

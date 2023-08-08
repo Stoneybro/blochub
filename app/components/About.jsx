@@ -3,7 +3,7 @@ import pic from '../../public/pic.png'
 import Image from 'next/image'
 const About = () => {
   return (
-    <div className=' z-50 bg-white text-black py-[3.2rem]'>
+    <div className=' z-50 bg-white text-black py-[3.2rem]' data-scroll-section>
         <div className="w-[1200px] mx-auto flex flex-col gap-4">
                 <div className="flex-1 px-12">
                     <div className="text-[5.3rem] font-medium">At BlocHub,</div>
