@@ -19,16 +19,18 @@ import './locomotive.css'
 
 export default function Home() {
   const containerref=useRef(null)
-    useEffect(()=>{
-        const scrollElement=new LocomotiveScroll({
-          el:containerref.current,
-          smooth:true,
+
+    useEffect(() => {
+      import("locomotive-scroll").then(locomotiveModule => {
+        const scroll = new locomotiveModule.default({
+          el: containerref.current,
+          smooth: true,
           smartphone:{
             smooth:true
           }
-          
         })
-    },[])
+      })
+    }, [])
   return (
     
     <div className='' data-scroll-container ref={containerref}>
